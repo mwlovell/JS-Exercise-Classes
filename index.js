@@ -108,9 +108,16 @@ drive(dist){
         + {name} and {location} of course come from the instance's own properties.
 */
 class Lambdasian {
+  constructor({name, age, location}){
+    this.name = name;
+    this.age = age;
+    this.location = location;
+  }
+  speak(){
+    return `Hello my name is ${this.name}, I am from ${this.location}`
+  }
   
 }
-
 /*
   TASK 4
     - Write an Instructor class extending Lambdasian.
